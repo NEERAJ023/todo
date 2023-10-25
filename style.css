@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    background-color: black;
+    display:grid;
+   width: 100vw;
+   height:100vh;
+    grid-template-columns: 3fr 7fr;
+    
+}
+form{
+    
+    background-color: antiquewhite;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 20px;
+    justify-content: center;
+    height:100vh;
+}
+form >button{
+    width:30%;
+    margin-inline:auto;
+    
+}
+form >button:hover{
+    box-shadow: 4px 4px 10px black;
+}
+form>input, form>select ,form>button{
+    padding:10px 20px;
+    border-radius:10px;
+    border:none;
+    box-shadow: 10px 10px 10px bisque;
+}
+
+form:valid>button{
+    background-color: blueviolet;
+}
+table{
+    width:90%;
+    padding:10px 20px;
+    color:white;
+    text-align: center;
+    margin:auto;
+}
+table,td,tr,th{
+    background-color:rgb(22, 54, 83);
+    border:2px solid aliceblue;
+    border-collapse: collapse;
+}
+th{
+    height:40px;
+    background-color: rgb(226, 155, 62);
+}
